@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find move_base_essentials)/launch/move_base.launch"/>
+    <include file="$(find mapping)/launch/kinect.launch"/>
+</launch>

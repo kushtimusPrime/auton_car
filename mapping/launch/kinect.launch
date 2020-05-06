@@ -20,6 +20,4 @@
 
     </include>
 
-    <node type="rviz" name="rviz" pkg="rviz" />
-
 </launch>
