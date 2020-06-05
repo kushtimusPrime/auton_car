@@ -23,8 +23,8 @@ class DutyCycle:
     def left_callback(self,data):
 
         #set duty cycle
-        tl_duty_cycle = data.data*75
-        bl_duty_cycle = data.data*75
+        tl_duty_cycle = data.data*100
+        bl_duty_cycle = data.data*100
 
         #publish duty cycles
         self.publishers["pub_tl_duty_cycle"].publish(tl_duty_cycle)
@@ -33,8 +33,8 @@ class DutyCycle:
     def right_callback(self,data):
 
         #set duty cycle
-        tr_duty_cycle = data.data*75
-        br_duty_cycle = data.data*75
+        tr_duty_cycle = data.data*100
+        br_duty_cycle = data.data*100
 
         #publish duty cycles
         self.publishers["pub_tr_duty_cycle"].publish(tr_duty_cycle)
