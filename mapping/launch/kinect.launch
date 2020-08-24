@@ -3,7 +3,6 @@
         <arg name="depth_registration" value="true"/>
 
     </include>
-
 <!-- Tf publisher to account for the way the kinect is mount vertically on the robot-->
    <node pkg="tf" type="static_transform_publisher" name="camera_base_link_rotation"
         args="0 0 0 0 0 0 base_link camera_link 100" />
@@ -19,5 +18,5 @@
         <arg name="approx_sync" value="true"/>
 
     </include>
-
 </launch>
+
