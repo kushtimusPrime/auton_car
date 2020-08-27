@@ -32,5 +32,9 @@
       <remap from="depth/image_out"     to="throttled/depth_registered/image_raw"/>
       <remap from="rgb/camera_info_out" to="throttled/rgb/camera_info"/>
     </node>
-  </group>      
+  </group>
+    <node pkg="tf" type="static_transform_publisher" name="odom_base_link_rotation"
+        args="0 0 0 0 0 0 odom base_link 100" />
+    <node pkg="tf" type="static_transform_publisher" name="camera_base_link_rotation"
+        args="0 0 0 0 0 0 base_link camera_link 100" />      
 </launch>
