@@ -56,12 +56,12 @@ def right_callback(data):
 
     hello=data.data
     if data.data < 0:
-        GPIO.output(MOTOR_RP,GPIO.LOW)
-        GPIO.output(MOTOR_RN,GPIO.HIGH)
+        GPIO.output(MOTOR_RN,GPIO.LOW)
+        GPIO.output(MOTOR_RP,GPIO.HIGH)
         hello=-hello
     else:
-        GPIO.output(MOTOR_RP,GPIO.HIGH)
-        GPIO.output(MOTOR_RN,GPIO.LOW)
+        GPIO.output(MOTOR_RN,GPIO.HIGH)
+        GPIO.output(MOTOR_RP,GPIO.LOW)
     pwmR.ChangeDutyCycle(hello)
 
 #Initialize as ROS node
